@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="emailheader">
+            <p>Email Header</p>>
+        </div>
+        <p>Subject: {{subject}}</p>
+        {% for e in thread %}
+            <p>To: {{e.to}}</p>
+            <p>From: {{e.from}}</p>
+            <p>{{e.text}}</p>
+        {% endfor %}
+    </body>
+</html>

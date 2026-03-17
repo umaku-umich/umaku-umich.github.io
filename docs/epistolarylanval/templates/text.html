@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="messageheader">
+            <p class="messageheadertext">{{chatname}}</p>>
+        </div>
+        {% for m in messages %}
+            {% if m.from == user and lanvalhere %}
+                <div class="message fromuser im">
+                    <p>Temporary: this message is from the user and it's an IM!</p>
+                    <strong>{{m.from}}</strong>
+                    <p>{{m.text}}</p>
+                </div>
+            { elif m.from == user and not lanvalhere %}
+                <div class="message fromuser sms">
+                    <p>Temporary: this message is from the user and it's an SMS!</p>
+                    <strong>{{m.from}}</strong>
+                    <p>{{m.text}}</p>
+                </div>
+            {% else %}
+                <div class="message fromother">
+                    <p>Temporary: this message is NOT from the user!</p>
+                    <strong>{{m.from}}</strong>
+                    <p>{{m.text}}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

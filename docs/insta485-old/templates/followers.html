@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="/"><img src="/images/instagram-logo-black-transparent.png" alt="Black and white Instagram logo" width="150" height="120"></a>
+            <p><a href="/explore/">explore</a> | <a href="/users/{{logname}}/">{{logname}}</a></p>
+        </div>
+        {% for follower in followers %}
+            <img src="{{follower.user_img_url}}" alt="Profile picture of {{follower.username}}" width="300" height="300">
+            <p class="username"><a href="/users/{{follower.username}}/">{{follower.username}}</a></p>
+            {% if logname != follower.username and follower.logname_follows_username %}
+                <p>following</p>
+            {% elif logname != follower.username and not follower.logname_follows_username %}
+                <p>not following</p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

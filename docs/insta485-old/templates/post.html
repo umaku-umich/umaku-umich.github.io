@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="/"><img src="/images/instagram-logo-black-transparent.png" alt="Black and white Instagram logo" width="150" height="120"></a>
+            <p><a href="/explore/">explore</a> | <a href="/users/{{logname}}/">{{logname}}</a></p>
+        </div>
+        <div class="post">
+            <a href="/users/{{owner}}/"><img src="{{owner_img_url}}" alt="Profile picture of {{owner}}" width="150" height="120"></a>
+            <p class="username"><a href="/users/{{owner}}/">{{owner}}</a></p>
+            <p class="timestamp"><a href="/posts/{{postid}}/">{{timestamp}}</a></p>
+            <img src="{{img_url}}" alt="Picture of post with id {{postid}}" width="500" height="500">
+            {% if likes == 1 %}
+                <p>{{likes}} like</p>
+            {% else %}
+                <p>{{likes}} likes</p>
+            {% endif %}
+
+            {% for comment in comments %}
+                <p class="username"><a href="/users/{{comment.owner}}/">{{comment.owner}}</a></p>
+                <p>{{comment.text}}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>

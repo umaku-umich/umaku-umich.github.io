@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insta485</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="/"><img src="/images/instagram-logo-black-transparent.png" alt="Black and white Instagram logo" width="150" height="120"></a>
+            <p><a href="/explore/">explore</a> | <a href="/users/{{logname}}/">{{logname}}</a></p>
+        </div>
+        <p class="username">{{username}}</p>
+        {% if logname != username and logname_follows_username %}
+            <p>following</p>
+        {% elif logname != username and not logname_follows_username %}
+            <p>not following</p>
+        {% endif %}
+
+        {% if total_posts == 1 %}
+            <p>{{total_posts}} post</p>
+        {% else %}
+            <p>{{total_posts}} posts</p>
+        {% endif %}
+
+        {% if followers == 1 %}
+            <p class="followers"><a href="/users/{{username}}/followers/">{{followers}} follower</a></p>
+        {% else %}
+            <p class="followers"><a href="/users/{{username}}/followers/">{{followers}} followers</a></p>
+        {% endif %}
+
+        <p class="following"><a href="/users/{{username}}/following/">{{following}} following</a></p>
+
+        <p>{{fullname}}</p>
+
+        <!-- Images -->
+         {% for post in posts %}
+            <a href="/posts/{{post.postid}}/"><img src="{{post.img_url}}" alt="Picture of post with id {{post.postid}}" width="300" height="300"></a>
+         {% endfor %}
+    </body>
+</html>
