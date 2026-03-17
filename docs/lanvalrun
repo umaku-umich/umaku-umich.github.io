@@ -13,11 +13,11 @@ set -Eeuo pipefail
 set -x
 
 # Clean
-rm -rf epistolarylanval_html
+rm -rf epistolarylanval
 
 # Build
-insta485generator epistolarylanval -o epistolarylanval_html
+insta485generator epistolarylanvaltemplates -o epistolarylanval
 
 # Serve
-cd epistolarylanval_html
+cd epistolarylanval
 python3 -m http.server 8000

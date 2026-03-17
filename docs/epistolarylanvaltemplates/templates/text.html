@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="messageheader">
-            <p class="messageheadertext">{{chatname}}</p>>
+            <p class="messageheadertext">{{chatname}}</p>
         </div>
         {% for m in messages %}
             {% if m.from == user and lanvalhere %}
@@ -15,7 +15,7 @@
                     <strong>{{m.from}}</strong>
                     <p>{{m.text}}</p>
                 </div>
-            { elif m.from == user and not lanvalhere %}
+            {% elif m.from == user and not lanvalhere %}
                 <div class="message fromuser sms">
                     <p>Temporary: this message is from the user and it's an SMS!</p>
                     <strong>{{m.from}}</strong>

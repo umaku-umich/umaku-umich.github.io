@@ -1,0 +1,30 @@
+[
+  {
+    "url": "/exampletext/", 
+    "template": "text.html",
+    "context": {
+      "chatname": "Example Chat Name", 
+      "user": "ExampleFrom1", 
+      "lanvalhere": true,
+      "messages": [
+        {
+          "from": "ExampleFrom1",
+          "text": "This is a text!!!"
+        }, 
+        {
+          "from": "ExampleFrom2", 
+          "text": "Whoa!!!"
+        }, 
+        {
+          "from": "ExampleFrom1", 
+          "text": "IKR!!"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/",
+    "template": "index.html",
+    "context": {}
+  }
+]
