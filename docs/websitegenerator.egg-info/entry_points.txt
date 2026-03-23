@@ -1,0 +1,2 @@
+[console_scripts]
+websitegenerator = websitegenerator.__main__:main

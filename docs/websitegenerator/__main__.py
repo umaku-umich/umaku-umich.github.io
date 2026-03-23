@@ -31,12 +31,12 @@ def main(input_dir, output, verbose):
         output = "generated_html"
     output = pathlib.Path(output)
     if output.exists():
-        print(f"insta485generator error: '{output}' already exists")
+        print(f"websitegenerator error: '{output}' already exists")
         sys.exit(1)
 
     config_filepath = input_dir / pathlib.Path("config.json")
     if not config_filepath.exists():
-        print(f"insta485generator error: '{config_filepath}' not found")
+        print(f"websitegenerator error: '{config_filepath}' not found")
         sys.exit(1)
     config_list = []
     try:
@@ -45,7 +45,7 @@ def main(input_dir, output, verbose):
             config_list = json.load(config_file)
         # config_filepath is automatically closed
     except (json.JSONDecodeError, UnicodeDecodeError, OSError) as e:
-        print(f"insta485generator error: '{config_filepath}'")
+        print(f"websitegenerator error: '{config_filepath}'")
         print(e)
         sys.exit(1)
 
@@ -55,7 +55,7 @@ def main(input_dir, output, verbose):
         template_html_name = config_list[i]["template"]
         # template_directory = input_dir / "templates"
         if not pathlib.Path(input_dir / "templates").is_dir():
-            print("insta485generator error: ",
+            print("websitegenerator error: ",
                   f"'{input_dir / "templates"}' not found")
             sys.exit(1)
 
@@ -71,7 +71,7 @@ def main(input_dir, output, verbose):
             )
         except (UnicodeDecodeError, OSError, TypeError,
                 jinja2.exceptions.TemplateError) as e:
-            print(f"insta485generator error: {template_html_name}")
+            print(f"websitegenerator error: {template_html_name}")
             print(e)
             sys.exit(1)
 

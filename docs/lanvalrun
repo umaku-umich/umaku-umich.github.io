@@ -16,7 +16,7 @@ set -x
 rm -rf epistolarylanval
 
 # Build
-insta485generator epistolarylanvaltemplates -o epistolarylanval
+websitegenerator epistolarylanvaltemplates -o epistolarylanval
 
 # Serve
 cd epistolarylanval
