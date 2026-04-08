@@ -6,13 +6,15 @@
     </head>
     <body>
         <div class="slackheader">
-            <p>Slack</p>>
+            <p>Slack</p>
         </div>
         <!-- <p>Channel: {{channel}}</p> -->
         {% for m in thread %}
-            <p>To: {{m.to}}</p>
-            <p>From: {{m.from}}</p>
-            <p>{{m.text}}</p>
+            <div style="background-color: lightgoldenrodyellow; border: 2px solid black;">
+                <p>To: {{m.to}}</p>
+                <p>From: {{m.from}}</p>
+                <p>{{m.text}}</p>
+            </div>
         {% endfor %}
     </body>
 </html>
