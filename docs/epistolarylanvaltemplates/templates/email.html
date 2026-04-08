@@ -10,9 +10,11 @@
         </div>
         <!-- <p>Subject: {{subject}}</p> -->
         {% for e in thread %}
-            <p>To: {{e.to}}</p>
-            <p>From: {{e.from}}</p>
-            <p>{{e.text}}</p>
+            <div style="background-color: lightblue; border: 2px solid black;">
+                <p>To: {{e.to}}</p>
+                <p>From: {{e.from}}</p>
+                <p>{{e.text}}</p>
+            </div>
         {% endfor %}
     </body>
 </html>
