@@ -1,23 +1,371 @@
 [
   {
-    "url": "/exampletext/", 
+    "url": "/email01/", 
+    "template": "email.html",
+    "context": {
+      "thread": [
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "yvain@university.edu",
+          "text": "Hello Dr. Pendragon, \nI hope you're doing well! I'm Yvain from BUSECON 318. Because of the accident on State Street, I entered class on Wednesday about half an hour late. I know it's a lot to ask, but could I have information about the extra credit presentation assignment? I'll make sure I complete it on time and to the best of my ability. \nThank you, \nYvain"
+        }, 
+        {
+          "to": "yvain@university.edu",
+          "from": "arthur.pendragon@university.edu",
+          "text": "Hello Yvain, \nThank you for reaching out. Due to extenuating circumstances, I'll give you the information. Note that this is a one-time permittance and I expect you to be on time in the future. \nArthur"
+        }, 
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "yvain@university.edu",
+          "text": "Hello Dr. Pendragon, \nThank you so much! I won't let you down. \nYvain"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/email02/", 
+    "template": "email.html",
+    "context": {
+      "thread": [
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "gawain@university.edu",
+          "text": "Hi Dr. Pendragon, \nHi, I'm Gawain. I was late to class yesterday since the huge traffic blockup between campuses stopped all the buses. You gave extra credit options to the rest of the class earlier but I missed out- could you give me them just a little late? I know you said they were only for students who came on time, but I really need the grade boost since I lowkey failed the last exam. \nEpic name btw! \nThanks a lot, \nGawain"
+        }, 
+        {
+          "to": "gawain@university.edu",
+          "from": "arthur.pendragon@university.edu",
+          "text": "Hello Gawain, \nOf course. Thank you for reaching out. See here for instructions. \nBest, \nArthur"
+        }, 
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "gawain@university.edu",
+          "text": "Thanks!!!"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/email03/", 
+    "template": "email.html",
+    "context": {
+      "thread": [
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "kay@university.edu",
+          "text": "Hi uncle, could I have the EC info doc? Thanks."
+        }, 
+        {
+          "to": "kay@university.edu",
+          "from": "arthur.pendragon@university.edu",
+          "text": "Done. "
+        }
+      ]
+    }
+  },
+  {
+    "url": "/email04/", 
+    "template": "email.html",
+    "context": {
+      "thread": [
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Dear Professor, \n My name is Lanval. I am a student in your BUSECON 318 class. I was unable to arrive to this class on time yesterday due to the traffic incident on S. State St., which delayed university bus routes 4 and 23 from approximately 3:33 PM to 4:12 PM (see University News article linked here). I entered class exactly 24 minutes late, and in doing so missed the instructions relating to the Presentation Extra Credit option. \nI am aware that all students not present at the beginning of the class were to be denied the opportunity to participate in the extra credit opportunity, as you rightfully prioritize punctuality and dedication within your classroom environment and within the university as a whole. However, as my tardiness was completely out of my control, I would like to tentatively request that this requirement be waived in this case. If not, I completely understand. If there is anything else I can do to gain access to the extra credit opportunity, please let me know; I would be glad to do it. \nI truly appreciate your time and consideration. \nBest, \nLanval"
+        }, 
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Dear Professor, \nI trust you are well. I understand that you have a very busy schedule; however, I would like to follow up with you on the above. \nBest, \nLanval"
+        }, 
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Dear Professor Pendragon, \nHello Professor- I understand that the extra credit deadline is tomorrow and I have not yet received a response from you. Is there anything I can do to help you send the relevant information my way? As I mentioned before, if you cannot give me this information, I understand. \nBest, \nLanval"
+        }, 
+        {
+          "to": "lanval@university.edu",
+          "from": "arthur.pendragon@university.edu",
+          "text": "Hey! Sorry about my late response, Lanval, it seems like I forgot to reply to you! Unfortunately, the extra credit deadline has passed. Instead, I advise you to study hard for the final; I'm sure you won't need the extra credit!\nArthur"
+        }, 
+        {
+          "to": "arthur.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Dear Professor, \nI see. Thank you. \nSincerely, \nLanval"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/text01/", 
     "template": "text.html",
     "context": {
-      "chatname": "Example Chat Name", 
-      "user": "ExampleFrom1", 
+      "chatname": "Lady", 
+      "user": "Lanval", 
       "lanvalhere": true,
       "messages": [
         {
-          "from": "ExampleFrom1",
-          "text": "This is a text!!!"
+          "from": "Lanval",
+          "text": "Hello! This is Lanval."
         }, 
         {
-          "from": "ExampleFrom2", 
-          "text": "Whoa!!!"
+          "from": "Lady",
+          "text": "&#x2665;&#xfe0f;"
+        },
+        {
+          "from": "Lanval",
+          "text": "Um. I don't know if you were serious yesterday. "
         }, 
         {
-          "from": "ExampleFrom1", 
-          "text": "IKR!!"
+          "from": "Lanval",
+          "text": "But if you were, do you want to come over? I'm in Pentecost Apartments, room 13. I'm free after 6. "
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "Do you want to get dinner with me? Don't worry, I'll get takeout. I remember your rules."
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "Could you come over? "
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "Come over?"
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "come over?"
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "hey i'm free"
+        }, 
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        },
+        {
+          "from": "Lanval",
+          "text": "come over?"
+        },
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/text02/", 
+    "template": "text.html",
+    "context": {
+      "chatname": "The Boys &trade;", 
+      "user": "Gawain", 
+      "lanvalhere": false,
+      "messages": [
+        {
+          "from": "Gawain",
+          "text": "pfft look who's here"
+        }, 
+        {
+          "from": "Gawain",
+          "text": "[pic.jpg]"
+        }, 
+        {
+          "from": "Kay",
+          "text": "dude who even is that"
+        }, 
+        {
+          "from": "Yvain",
+          "text": "is that the teacher's pet lol? i didn't think he'd be caught dead at a party like this"
+        }, 
+        {
+          "from": "Yvain",
+          "text": "kay we were in a group project with him remember? we made a group chat. i think he lives in our apartment too"
+        }, 
+        {
+          "from": "Kay",
+          "text": "oh was he the guy that literally always texted with perfect grammar LMAO"
+        }, 
+        {
+          "from": "Gawain",
+          "text": "hope he leaves"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/text03/", 
+    "template": "text.html",
+    "context": {
+      "chatname": "Lady", 
+      "user": "Lanval", 
+      "lanvalhere": true,
+      "messages": [
+        {
+          "from": "Lanval",
+          "text": "at a party. boring as hell "
+        }, 
+        {
+          "from": "Lanval",
+          "text": "kay is throwing up in the corner. everyone's drinking. i think gawain tried to take a picture of me just now"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "back home nobody was like this i swear"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "i don't know if it's this college or this country or what but everything's just so- different here. everything's so hard"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "except you"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "sorry. too much? "
+        }, 
+        {
+          "from": "Lanval",
+          "text": "sorry."
+        }, 
+        {
+          "from": "Lanval",
+          "text": "just wish you were here"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "i know i know"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "i can't be with you here"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "can't be with you anywhere. god this is hard"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "wouldn't trade it for anything though"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "wouldn't trade you for anything"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "i miss you"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "..."
+        }, 
+        {
+          "from": "Lanval",
+          "text": "you know what screw this"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "I'm going back to the apartment"
+        }, 
+        {
+          "from": "Lanval",
+          "text": "come over?"
+        },
+        {
+          "from": "Lady",
+          "text": "&#128077"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/text04/", 
+    "template": "text.html",
+    "context": {
+      "chatname": "The Boys &trade;", 
+      "user": "Gawain", 
+      "lanvalhere": false,
+      "messages": [
+        {
+          "from": "Gawain",
+          "text": "LMAOOOOOO KAY YOU THREW UP SO HARD"
+        }, 
+        {
+          "from": "Kay",
+          "text": "SHUT UP"
+        }, 
+        {
+          "from": "Yvain",
+          "text": "wait wait where'd the teacher's pet go"
+        }, 
+        {
+          "from": "Gawain",
+          "text": "probably left"
+        }, 
+        {
+          "from": "Kay",
+          "text": "haha loser"
+        }
+      ]
+    }
+  },
+  {
+    "url": "/slack01/",
+    "template": "slack.html",
+    "context": {
+      "thread": [
+        {
+          "to": "lanval@university.edu",
+          "from": "guinevere.pendragon@university.edu",
+          "text": "There's a prospective grad student mixer next week [calendar invite attached]. I'm a speaker. I'd love to see you there <3"
+        }, 
+        {
+          "to": "guinevere.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Uh, I'm not a grad student. But thank you very much for the invitation, Mrs. Pendragon. "
+        },
+        {
+          "to": "guinevere.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Guinevere, please. And all students are invited, undergraduates included!"
+        },
+        {
+          "to": "guinevere.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "Please come."
+        },
+        {
+          "to": "guinevere.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "We'd love to have you, Lanval. "
+        },
+        {
+          "to": "guinevere.pendragon@university.edu",
+          "from": "lanval@university.edu",
+          "text": "I'd love to have you. "
         }
       ]
     }

@@ -4,11 +4,11 @@
         <title>insta485</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
     </head>
-    <body>
+    <body style="white-space: pre-line;">
         <div class="emailheader">
-            <p>Email Header</p>>
+            <p>Email</p>
         </div>
-        <p>Subject: {{subject}}</p>
+        <!-- <p>Subject: {{subject}}</p> -->
         {% for e in thread %}
             <p>To: {{e.to}}</p>
             <p>From: {{e.from}}</p>
