@@ -1,0 +1,13 @@
+.emailstyle {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+p {
+  font-family: 'Courier New', monospace;
+}
+a {
+  font-family: 'Courier New', monospace;
+}
+a:link { color: darkgreen; text-decoration: none; }
+a:visited { color: darkred; }
