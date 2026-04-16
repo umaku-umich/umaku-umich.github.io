@@ -5,9 +5,11 @@
 }
 p {
   font-family: 'Courier New', monospace;
+  font-size: 20px;
 }
 a {
   font-family: 'Courier New', monospace;
+  font-size: 20px;
 }
 a:link { color: darkgreen; text-decoration: none; }
 a:visited { color: darkred; }
